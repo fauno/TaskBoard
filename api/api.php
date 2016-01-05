@@ -25,7 +25,7 @@ function exceptionHandler($exception) {
 };
 set_exception_handler('exceptionHandler');
 
-R::setup('sqlite:'.__DIR__.'/taskboard.db');
+require_once(__DIR__.'/database.php');
 R::setAutoResolve(TRUE);
 createInitialUser();
 
