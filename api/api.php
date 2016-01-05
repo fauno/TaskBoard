@@ -25,7 +25,7 @@ function exceptionHandler($exception) {
 };
 set_exception_handler('exceptionHandler');
 
-require_once(__DIR__.'/database.php');
+include_once(__DIR__.'/database.php');
 R::setAutoResolve(TRUE);
 createInitialUser();
 
